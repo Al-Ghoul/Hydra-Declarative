@@ -1,0 +1,30 @@
+{
+  "enabled": 1,
+  "description": "CI & CD build jobs",
+  "hidden": false,
+  "nixexprinput": "nixexpr",
+  "nixexprpath": ".hydra/jobsets.nix",
+  "checkinterval": 600,
+  "schedulingshares": 100,
+  "enableemail": false,
+  "emailoverride": "",
+  "keepnr": 1,
+  "type": 0,
+  "inputs": {
+    "nixexpr": {
+      "value": "https://github.com/Al-Ghoul/EnjoyChat-Backend main",
+      "type": "git",
+      "emailresponsible": false
+    },
+    "nixpkgs": {
+      "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+      "type": "git",
+      "emailresponsible": false
+    },
+    "pulls": {
+      "type": "githubpulls",
+      "value": "Al-Ghoul EnjoyChat-Backend",
+      "emailresponsible": false
+    }
+  }
+}
