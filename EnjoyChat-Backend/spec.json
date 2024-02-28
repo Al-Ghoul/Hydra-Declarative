@@ -3,7 +3,7 @@
   "description": "CI & CD build jobs",
   "hidden": false,
   "nixexprinput": "nixexpr",
-  "nixexprpath": ".hydra/jobsets.nix",
+  "nixexprpath": "EnjoyChat-Backend/jobsets.nix",
   "checkinterval": 600,
   "schedulingshares": 100,
   "enableemail": false,
@@ -12,7 +12,7 @@
   "type": 0,
   "inputs": {
     "nixexpr": {
-      "value": "https://github.com/Al-Ghoul/EnjoyChat-Backend main",
+      "value": "https://github.com/Al-Ghoul/Hydra-Declarative",
       "type": "git",
       "emailresponsible": false
     },
